@@ -37,7 +37,7 @@
     "minimist": "^1.2.5"
   },
   "scripts": {
-    "clean": "rm -r node_modules && rm -r common/node_modules && rm -r server/node_modules && rm -r web/node_modules",
+    "clean": "rm -rf node_modules && rm -rf common/node_modules && rm -rf server/node_modules && rm -rf web/node_modules",
     "build": "yarn build:maint && yarn build:common && concurrently \"yarn build:server\" \"yarn build:web\"",
     "build:compressed-size": "yarn build:common && yarn build:web",
     "build:web": "cd web && yarn build && cd ..",
