@@ -179,7 +179,7 @@ export default class Server {
     next: express.NextFunction
   ) {
     // Set by HTTPS load-balancers like ELBs
-    if (req.headers['x-forwarded-proto'] === 'http') {
+    if (req.headers['x-forwarded-proto'] === 'https') {
       // Send to https please, always and forever
       res.redirect(
         StatusCodes.PERMANENT_REDIRECT,

@@ -79,7 +79,7 @@ if (DOMAIN) {
         ((
           {
             stage: 'https://commonvoice.allizom.org',
-            prod: 'https://commonvoice.mozilla.org',
+            prod: 'http://hablaec-o2i.epn.edu.ec',
             dev: 'https://dev.voice.mozit.cloud',
             sandbox: 'https://sandbox.voice.mozit.cloud',
           } as any
