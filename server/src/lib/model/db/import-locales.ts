@@ -196,11 +196,11 @@ export async function importLocales() {
     console.log('Fetching existing languages');
 
     const [existingLangauges] = await db.query(`
-      SELECT t.locale_id as has_clips, l.id, l.name, l.target_sentence_count as target_sentence_count, count(1) as total_sentence_count
-      FROM locales l
-      LEFT JOIN sentences s ON s.locale_id = l.id
-      LEFT JOIN (SELECT c.locale_id FROM clips c group by c.locale_id) t on t.locale_id = s.locale_id
-      GROUP BY l.id
+    SELECT t.locale_id as has_clips, l.id, l.name, l.target_sentence_count as target_sentence_count, count(1) as total_sentence_count
+    FROM locales l
+    LEFT JOIN sentences s ON s.locale_id = l.id
+    LEFT JOIN (SELECT c.locale_id FROM clips c group by c.locale_id) t on t.locale_id = s.locale_id
+    GROUP BY l.id
     `);
 
     console.log(`${existingLangauges.length} Existing Languages`);
@@ -239,7 +239,7 @@ export async function importLocales() {
         ? 1
         : 0;
       //Filtrar espñol
-      const is_Spanish = language.code === 'es' ? 1 : 0;
+      const is_Spanish = languagesWithClips[language.code] === 'es' ? 1 : 0;
 
       obj[language.code] = {
         ...language,
