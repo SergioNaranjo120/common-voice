@@ -4,7 +4,7 @@ import { parse } from '@fluent/syntax';
 import * as path from 'path';
 import * as fs from 'fs';
 
-const TRANSLATED_MIN_PROGRESS = 0.6;
+const TRANSLATED_MIN_PROGRESS = 0.0;
 const DEFAULT_TARGET_SENTENCE_COUNT = 5000;
 
 const localeMessagesPath = path.join(
@@ -218,10 +218,6 @@ export async function importLocales() {
         hasEnoughSentences:
           language.total_sentence_count >= language.target_sentence_count,
       };
-
-      console.log("ver los nuevos locales que se van a insertar");
-      console.log(obj);
-
       return obj;
     }, {});
 
@@ -252,6 +248,8 @@ export async function importLocales() {
         is_contributable,
       };
       return obj;
+      console.log("Mostrar lista de locales a mostrar");
+      console.log(obj);
     }, {});
 
     console.log('Saving language data to database');
