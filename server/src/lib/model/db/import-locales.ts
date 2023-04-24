@@ -238,8 +238,8 @@ export async function importLocales() {
         : isTranslated && hasEnoughSentences // no prev clips, check translated and enough sentences
         ? 1
         : 0;
-
-      const is_Spanish = languagesWithClips[language.code] == 'es';
+      //Filtrar espñol
+      const is_Spanish = language.code === 'es' ? 1 : 0;
 
       obj[language.code] = {
         ...language,
@@ -253,7 +253,6 @@ export async function importLocales() {
       console.log("Mostrar lista de locales a mostrar");
       console.log(obj);
       return obj;
-
     }, {});
 
     console.log('Saving language data to database');
