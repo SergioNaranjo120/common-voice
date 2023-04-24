@@ -141,8 +141,6 @@ const saveToMessages = (languages: any) => {
     ].join('\n')
   );
   fs.writeFileSync(messagesPath, newMessages);
-  console.log("Imprimir el archivo en/messages.ftl luego de la actualizacion");
-  console.log(messages);
 };
 
 const buildLocaleNativeNameMapping: any = () => {
@@ -220,6 +218,10 @@ export async function importLocales() {
         hasEnoughSentences:
           language.total_sentence_count >= language.target_sentence_count,
       };
+
+      console.log("ver los nuevos locales que se van a insertar");
+      console.log(obj);
+
       return obj;
     }, {});
 
