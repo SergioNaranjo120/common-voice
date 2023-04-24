@@ -239,6 +239,8 @@ export async function importLocales() {
         ? 1
         : 0;
 
+      const is_Spanish = languagesWithClips[language.code] == 'es';
+
       obj[language.code] = {
         ...language,
         target_sentence_count:
@@ -246,6 +248,7 @@ export async function importLocales() {
           DEFAULT_TARGET_SENTENCE_COUNT,
         is_translated: isTranslated ? 1 : 0,
         is_contributable,
+        is_Spanish
       };
       return obj;
       console.log("Mostrar lista de locales a mostrar");
