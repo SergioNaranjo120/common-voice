@@ -231,15 +231,18 @@ export async function importLocales() {
 
       const hasEnoughSentences =
         allLanguages[language.code]?.hasEnoughSentences || false;
+      
+      
+      //Filtrar español
+      const isSpanish = allLanguages[language.code] === 'es' ? 1 : 0;
 
       //if a lang has clips, consider it contributable
       const is_contributable = languagesWithClips[language.code]
         ? 1
-        : isTranslated && hasEnoughSentences // no prev clips, check translated and enough sentences
+        : isTranslated && hasEnoughSentences && isSpanish// no prev clips, check translated and enough sentences
         ? 1
         : 0;
-      //Filtrar espñol
-      const is_Spanish = allLanguages[language.code] === 'es' ? 1 : 0;
+
 
       obj[language.code] = {
         ...language,
@@ -247,8 +250,8 @@ export async function importLocales() {
           allLanguages[language.code]?.target_sentence_count ||
           DEFAULT_TARGET_SENTENCE_COUNT,
         is_translated: isTranslated ? 1 : 0,
-        is_contributable,
-        is_Spanish
+        is_Spanish: isSpanish ? 1 : 0,
+        is_contributable
       };
       console.log("Mostrar lista de locales a mostrar");
       console.log(obj);
