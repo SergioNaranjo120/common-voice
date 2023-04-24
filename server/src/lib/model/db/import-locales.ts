@@ -250,9 +250,10 @@ export async function importLocales() {
         is_contributable,
         is_Spanish
       };
-      return obj;
       console.log("Mostrar lista de locales a mostrar");
       console.log(obj);
+      return obj;
+
     }, {});
 
     console.log('Saving language data to database');
