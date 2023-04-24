@@ -131,8 +131,6 @@ const db = getMySQLInstance();
 const saveToMessages = (languages: any) => {
   const messagesPath = path.join(localeMessagesPath, 'en', 'messages.ftl');
   const messages = fs.readFileSync(messagesPath, 'utf-8');
-  console.log("Imprimir el archivo en/messages.ftl");
-  console.log(messages);
   const newMessages = messages.replace(
     /#\s\[Languages]([\s\S]*?)#\s\[\/]/gm,
     [
@@ -143,6 +141,8 @@ const saveToMessages = (languages: any) => {
     ].join('\n')
   );
   fs.writeFileSync(messagesPath, newMessages);
+  console.log("Imprimir el archivo en/messages.ftl luego de la actualizacion");
+  console.log(messages);
 };
 
 const buildLocaleNativeNameMapping: any = () => {
@@ -188,12 +188,8 @@ const fetchPontoonLanguages = async (): Promise<any[]> => {
 export async function importLocales() {
   console.log('Importing languages...');
   const locales = await fetchPontoonLanguages();
-  console.log('Provando locales importados');
-  console.log(locales);
   console.log('Got Pontoon Languages');
   const nativeNames = buildLocaleNativeNameMapping();
-  console.log('Provando locales to native mapping');
-  console.log(nativeNames);
   console.log('Built native names');
   saveToMessages(locales);
   console.log('Saved native names to message file');
