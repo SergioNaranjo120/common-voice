@@ -239,7 +239,7 @@ export async function importLocales() {
         ? 1
         : 0;
       //Filtrar espñol
-      const is_Spanish = languagesWithClips[language.code] === 'es' ? 1 : 0;
+      const is_Spanish = allLanguages[language.code] === 'es' ? 1 : 0;
 
       obj[language.code] = {
         ...language,
