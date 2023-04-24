@@ -1,7 +1,7 @@
 ## General
 
-yes-receive-emails = Jā, sūtiet man e-pastus. Es vēlos būt informēts par Common Voice projektu.
-stayintouch = Mēs Mozilla veidojam kopienu ap balss tehnoloģiju. Mēs vēlētos ar jums saglabāt kontaktus, lai informētu jūs par jaunumiem un iegūtu informāciju kā jūs lietojat šeit pieejamās datu kopas.
+yes-receive-emails = Jā, sūtiet man e-pastus. Es vēlos saņemt informāciju par Common Voice projektu.
+stayintouch = Mēs Mozilla veidojam kopienu balss tehnoloģiju jomā. Mēs vēlētos uzturēt kontaktus ar jums, lai informētu jūs par jaunumiem un iegūtu informāciju, kā jūs lietojat šeit pieejamās datu kopas.
 privacy-info = Mēs apsolām rīkoties ar jūsu informāciju uzmanīgi. Lasiet vairāk mūsu <privacyLink>privātuma paziņojumā</privacyLink>.
 return-to-cv = Atgriezties pie Common Voice
 email-input =
@@ -10,15 +10,15 @@ submit-form-action = Nosūtīt
 loading = Ielāde...
 email-opt-in-info = Es vēlos saņemt e-pasta ziņojumus, piemēram, mērķa atgādinājumus, progresa atjauninājumus un informatīvos biļetenus par šo projektu.
 email-opt-in-info-title = Pievienoties Common Voice ziņojumiem e-pastā
-email-opt-in-info-sub-with-challenge = Saņemiet e-pastus par sacensībām vai pasākumiem, atgādinājumus par mērķiem, jaunumus un ziņas no Commaon Voice
-email-opt-in-privacy-v2 = Izvēloties saņemt e-pasta ziņojumus, jūs piekrītat, ka Mozilla apstrādās tos tā kā tas ir norādīts Mozilla <privacyLink>privātuma politikā<privacyLink>.
+email-opt-in-info-sub-with-challenge = Saņemiet e-pastus par sacensībām vai pasākumiem, atgādinājumus par mērķiem, jaunumus un ziņas no Common Voice
+email-opt-in-privacy-v2 = Izvēloties saņemt e-pasta ziņojumus, jūs piekrītat, ka Mozilla apstrādās tos tā, kā tas ir norādīts Mozilla <privacyLink>privātuma politikā<privacyLink>.
 indicates-required = * Obligātie lauki
 not-available-abbreviation = N/A
 banner-error-slow-1 = Atvainojiet, Common Voice darbojas lēni. Paldies par interesi.
 banner-error-slow-2 = Mēs saņemam daudz pieprasījumu un pašlaik risinām problēmas.
 banner-error-slow-link = Statusa lapa
 error-something-went-wrong = Piedodiet, kaut kas nogāja greizi
-error-clip-upload = Šī ieraksts augšupielāde joprojām neizdodas. Vai turpināt mēģināt vēlreiz?
+error-clip-upload = Šī ieraksts augšupielāde joprojām neizdodas. Vai mēģināt vēlreiz?
 error-clip-upload-server = Šī ieraksta augšupielāde serverī joprojām neizdodas. Pārlādējiet lapu vai vēlāk mēģiniet vēlreiz.
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
@@ -249,24 +249,24 @@ logout = Beigt darbu
 home-title = Common Voice ir Mozilla iniciatīva, lai palīdzētu mācīt mašīnas, kā reāli cilvēki runā.
 default-tagline = Common Voice ir Mozilla iniciatīva, lai palīdzētu mācīt mašīnas, kā reāli cilvēki runā.
 home-cta = Runā skaļi, veic ieguldījumu šeit!
-wall-of-text-start = Balss ir dabiska, balss ir cilvēciska. Tieši tāpēc mēs vēlamies izveidot balss atpazīšanas tehnoloģiju, kuru varētu lietot dažādās ierīcēs. Bet, lai radītu šādu balss tehnoloģiju ir nepieciešams liels balss ierakstu skaits.
-wall-of-text-more-mobile = Lielākā daļa datu, ko izmanto lielie uzņēmumi, nav pieejami visiem cilvēkiem. Mēs domājam, ka tas kavē inovāciju. Tāpēc mēs esam uzsākuši projektu Common Voice, projektu, kas padarīs balss atpazīšanu pieejamu ikvienam.
+wall-of-text-start = Balss ir dabiska, balss ir cilvēciska. Tieši tāpēc mēs vēlamies izveidot balss atpazīšanas tehnoloģiju, kuru varētu lietot dažādās ierīcēs. Bet, lai radītu šādu balss tehnoloģiju, ir nepieciešams daudz balss ierakstu.
+wall-of-text-more-mobile = Lielākā daļa datu, ko izmanto lielie uzņēmumi, nav pieejami visiem cilvēkiem. Tas kavē inovāciju. Tāpēc esam uzsākuši Common Voice - projektu, kas padarīs balss atpazīšanu pieejamu ikvienam.
 wall-of-text-more-desktop =
-    Tagad jūs varat ziedot savu balsi, lai palīdzētu mums izveidot atvērtā pirmkoda balss datubāzi, ko var izmantot ikviens
-    veidojot inovatīvas lietotnes ierīcēm un tīmeklim. Lasiet teikumu, lai palīdzētu mašīnām iemācīt, kā runā cilvēki . Pārbaudiet citu cilvēku ierakstus, lai uzlabotu to kvalitāti. Tas ir tik vienkārši!
-wall-of-text-first = Balss ir dabiska, balss ir cilvēciska. Tieši tāpēc mēs vēlamies izveidot balss atpazīšanas tehnoloģiju, kuru varētu lietot dažādās ierīcēs. Bet, lai radītu šādu balss tehnoloģiju ir nepieciešams liels balss ierakstu skaits.
-wall-of-text-second = Lielākā daļa datu, ko izmanto lielie uzņēmumi, nav pieejami visiem cilvēkiem. Mēs domājam, ka tas kavē inovāciju. Tāpēc mēs esam uzsākuši projektu Common Voice, projektu, kas padarīs balss atpazīšanu pieejamu ikvienam.
+    Tagad jūs varat ziedot savu balsi, lai palīdzētu mums izveidot atvērtā pirmkoda balss datubāzi, ko var izmantot ikviens,
+    veidojot inovatīvas lietotnes ierīcēm un tīmeklim. Lasiet teikumu, lai palīdzētu mašīnām iemācīt, kā runā cilvēki. Pārbaudiet citu cilvēku ierakstus, lai uzlabotu datu kvalitāti. Tas ir tik vienkārši!
+wall-of-text-first = Balss ir dabiska, balss ir cilvēciska. Tieši tāpēc mēs vēlamies izveidot balss atpazīšanas tehnoloģiju, kuru varētu lietot dažādās ierīcēs. Bet, lai radītu šādu balss tehnoloģiju, ir nepieciešams daudz balss ierakstu.
+wall-of-text-second = Lielākā daļa datu, ko izmanto lielie uzņēmumi, nav pieejami visiem cilvēkiem. Tas kavē inovāciju. Tāpēc mēs esam uzsākuši Common Voice - projektu, kas padarīs balss atpazīšanu pieejamu ikvienam.
 show-wall-of-text = Lasīt vairāk
-help-us-title = Palīdziet mums pārbaudīt teikumus!
-help-us-explain = Nospiediet atskaņošanas pogu, klausieties un pārbaudiet vai viņi precīzi izrunāja zemāk norādīto teikumu?
+help-us-title = Palīdziet pārbaudīt teikumus!
+help-us-explain = Nospiediet atskaņošanas pogu, klausieties un pārbaudiet, vai zemāk norādītais teikums ir izrunāts precīzi.
 no-clips-to-validate = Izskatās, ka šajā valodā nav audio failu. Palīdziet mums, ierakstot dažus tagad.
 vote-yes = Jā
 vote-no = Nē
 toggle-play-tooltip = Nospiediet { shortcut-play-toggle }, lai pārslēgtu atskaņošanas režīmu
 speak-subtitle = Ziedot savu balsi
-speak-paragraph = Lai mūsu valoda neizzustu iekārtu laikmetā, mums jāieraksta savas balsis; daži varētu teikt, ka tas ir arī jautri.
+speak-paragraph = Lai mūsu valoda iekārtu laikmetā neizzustu, mums jāieraksta savas balsis; daži teiktu, ka tas ir arī jautri.
 speak-goal-text = Ieraksti ierakstīti
-listen-subtitle = Palīdziet mums pārbaudīt balsis
+listen-subtitle = Palīdziet pārbaudīt balsis
 listen-paragraph = Ierakstīto ierakstu pārbaudīšana ir ļoti svarīga. Klausieties ierakstus un palīdziet iemācīt iekārtām saprast mūsu valodu.
 listen-goal-text = Apstiprinātie ieraksti
 hours-recorded = Ierakstītās stundas
@@ -309,15 +309,15 @@ improve-audio = Profila informācija uzlabo audio ierakstu datus, ko izmanto run
 keep-track = Sekojiet līdzi savam progresam un datiem vairākās valodās.
 compare-progress = Skatiet, kā jūsu progress ir salīdzināms ar citiem ieguldītājiem visā pasaulē.
 view-goals = Skatiet savu progresu pret personiskajiem un projekta mērķiem.
-join-newsletter = Ja vēlaties, pievienojieties mūsu e-pasta sarakstam, lai saņemtu projekta jaunumus un informāciju par projektu.
+join-newsletter = Ja vēlaties, pievienojieties mūsu e-pasta adresātu sarakstam, lai saņemtu projekta jaunumus un informāciju par projektu.
 
 ## What's public
 
 whats-public = Kas ir publiski pieejams?
 email-not-public = Mēs nepubliskosim jūsu epastu.
-recordings-and-locale-public = Ieguldīto ierakstu skaits un valodas, būs pieejamas publiski.
+recordings-and-locale-public = Ieguldīto ierakstu skaits un valodas būs publiski pieejamas.
 username-optin-public = Jūs varat izvēlēties, vai lietotājvārds ir publisks vai anonīms.
-demographic-deidentified-clarity-2 = Pēc izvēles iesniegtie demogrāfiskie dati (piemēram, vecums, dzimums, valoda un akcents) nekad netiks publiskoti jūsu profilā un netiks saistīti ar jūsu kontu datu kopā. Atsevišķi audio klipi tiks saistīti ar demogrāfiskajiem datiem, lai veiktu precīzāku analīzi, piemēram, pētnieks var vēlēties mērķēt apmācību modeli uz noteiktu demogrāfisko segmentu.
+demographic-deidentified-clarity-2 = Pēc izvēles iesniegtie demogrāfiskie dati (piemēram, vecums, dzimums, valoda un akcents) nekad netiks publiskoti jūsu profilā un netiks saistīti ar jūsu kontu datu kopā. Atsevišķi audio ieraksti tiks saistīti ar demogrāfiskajiem datiem, lai veiktu precīzāku analīzi, piemēram, pētnieks var vēlēties apmācību modeli atlasīt noteiktam demogrāfiskajam segmentam.
 username-email-not-demographic = Jūsu lietotājvārds un e-pasts netiks piesaistīti publicētajiem datiem.
 
 ## Speak & Listen Shortcuts
@@ -375,7 +375,7 @@ profile-form-username =
 profile-form-native-language =
     .label = Dzimtā valoda
 profile-form-additional-language =
-    .label = Papildus valoda
+    .label = Papildu valoda
 profile-form-language =
     .label = Valoda
 profile-form-variant =
@@ -417,7 +417,7 @@ profile-explanation = Sekojiet savam progresam ar savu profilu un palīdziet mū
 thanks-for-account = Paldies, ka apstiprinājāt savu kontu, tagad izveidosim jūsu profilu.
 why-demographic = Kāpēc tas ir svarīgi?
 why-demographic-explanation-2 = Anonimizēti lietotāja dati, piemēram, vecums, dzimums un akcents, palīdz uzlabot ierakstus, ko izmanto, lai trenētu runas atpazīšanas algoritmu precizitāti. Jūsu lietotājvārds un e-pasts nekad netiks piesaistīti jūsu iesniegtajiem datiem, un jūs varat izvēlēties, vai padarīt savu lietotājvārdu publisku vai anonīmu.
-accept-privacy = Es piekrītu, ka Mozilla apstrādā manu informāciju tā kā tas ir norādīts Mozillas <privacyLink>privātuma politikā</privacyLink>
+accept-privacy = Es piekrītu, ka Mozilla apstrādā manu informāciju tā, kā tas ir norādīts Mozillas <privacyLink>privātuma politikā</privacyLink>
 accept-privacy-title = Privātuma politika
 accept-privacy-and-terms = Es piekrītu Common Voice <termsLink>noteikumiem</termsLink> un <privacyLink>konfidencialitātes paziņojumam</privacyLink>
 login-identity = Pieteikšanās identitāte
@@ -428,7 +428,7 @@ email-subscriptions = Jaunumu abonēšana e-pastā
 download-profile = Lejupielādēt manus datus
 contribution-experience = Piedalīšanās pieredze
 skip-submission-feedback = Izlaist atsauksmes
-skip-submission-description = Iesnieguma iesniegšanas laikā atgriezeniskā saite tiks izlaista pēc noklikšķināšanas uz 'Iesniegt'. Ieguldījums tiks turpināts tieši ar nākamo 5 ierakstiem vai apstiprinājumiem.
+skip-submission-description = Iesnieguma iesniegšanas laikā atgriezeniskā saite tiks izlaista pēc noklikšķināšanas uz 'Iesniegt'. Ieguldījums tiks turpināts tieši ar nākamajiem 5 ierakstiem vai apstiprinājumiem.
 skip-submission-note = Piezīme: mainot ieguldījuma veidu, jums būs jāizvēlas ierakstīt vai klausīties.
 off = Izslēgts
 on = Ieslēgts
@@ -454,14 +454,14 @@ manage-subscriptions = Pārvaldīt abonementus
 manage-email-subscriptions = Pārvaldiet e-pasta abonementus
 email-already-used = E-pasts jau tiek izmantots citam kontam
 add-language = Pievienot valodu
-change-email-setings = Mainiet savu e-pastu, iestatījumus sadaļā "Pieteikšanās identitāte"
+change-email-setings = Mainiet savu e-pastu, izmantojot iestatījumus sadaļā "Pieteikšanās identitāte"
 
 ## FAQ
 
 faq-title = Biežāk uzdotie jautājumi
 faq-what-cv-q = Kas ir Common Voice?
 faq-what-cv-a =
-    Balss atpazīšanas tehnoloģija revolucionizē veidu, kā mēs sadarbojamies ar mašīnām, bet pašlaik pieejamās sistēmas ir dārgas un patentētas. Kopējā balss ir daļa no Mozilla iniciatīvas, lai uzlabotu balss atpazīšanas tehnoloģijas ikvienam. Kopējā balss ir milzīga globāla ziedoto balsu datu bāze, kas ļauj ikvienam ātri un viegli apmācīt balss iespējotas lietojumprogrammas potenciāli visās valodās.
+    Balss atpazīšanas tehnoloģija revolucionizē veidu, kā mēs sadarbojamies ar mašīnām, bet pašlaik pieejamās sistēmas ir dārgas un patentētas. Common Voice ir daļa no Mozilla iniciatīvas, lai uzlabotu balss atpazīšanas tehnoloģijas ikvienam. Common Voice ir milzīga globāla ziedoto balsu datu bāze, kas ļauj ikvienam ātri un viegli apmācīt balss iespējotas lietojumprogrammas potenciāli visās valodās.
     
     Mēs ne tikai vācam balss paraugus plaši runātās valodās, bet arī tajās, kurās ir mazāk runātāju. Daudzveidīgu balsu datu kopu publicēšana ļaus izstrādātājiem, uzņēmējiem un kopienām risināt šo trūkumu. Papildus kopīgajai balss datu kopai mēs veidojam arī atvērtā pirmkoda runas atpazīšanas dzinēju, ko sauc par Deep Speech.
 faq-what-cv-a-2 =
