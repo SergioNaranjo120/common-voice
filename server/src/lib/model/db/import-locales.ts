@@ -305,7 +305,7 @@ export async function importLocales() {
 
     //get languages again, since new langauges may have been added
     const [languageQuery] = await db.query(
-      `SELECT id, name FROM locales where name is not null`
+      `SELECT id, name FROM locales where name == 'es'`
     );
 
     //reshape query results into object
