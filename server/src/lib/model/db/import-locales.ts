@@ -131,7 +131,8 @@ const db = getMySQLInstance();
 const saveToMessages = (languages: any) => {
   const messagesPath = path.join(localeMessagesPath, 'en', 'messages.ftl');
   const messages = fs.readFileSync(messagesPath, 'utf-8');
-
+  console.log("Imprimir el archivo en/messages.ftl");
+  console.log(messages);
   const newMessages = messages.replace(
     /#\s\[Languages]([\s\S]*?)#\s\[\/]/gm,
     [
