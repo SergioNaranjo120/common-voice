@@ -200,6 +200,7 @@ export async function importLocales() {
     FROM locales l
     LEFT JOIN sentences s ON s.locale_id = l.id
     LEFT JOIN (SELECT c.locale_id FROM clips c group by c.locale_id) t on t.locale_id = s.locale_id
+    WHERE l.name = 'es'
     GROUP BY l.id
     `);
 
@@ -232,14 +233,11 @@ export async function importLocales() {
       const hasEnoughSentences =
         allLanguages[language.code]?.hasEnoughSentences || false;
       
-      
-      //Filtrar español
-      const isSpanish = allLanguages[language.code] === 'es' ? 1 : 0;
 
       //if a lang has clips, consider it contributable
       const is_contributable = languagesWithClips[language.code]
         ? 1
-        : isTranslated && hasEnoughSentences && isSpanish// no prev clips, check translated and enough sentences
+        : isTranslated && hasEnoughSentences // no prev clips, check translated and enough sentences
         ? 1
         : 0;
 
@@ -250,11 +248,8 @@ export async function importLocales() {
           allLanguages[language.code]?.target_sentence_count ||
           DEFAULT_TARGET_SENTENCE_COUNT,
         is_translated: isTranslated ? 1 : 0,
-        is_Spanish: isSpanish ? 1 : 0,
         is_contributable
       };
-      console.log("Mostrar lista de locales a mostrar");
-      console.log(obj);
       return obj;
     }, {});
 
