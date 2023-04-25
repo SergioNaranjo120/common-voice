@@ -44,7 +44,7 @@ function streamSentences(localePath: string) {
           });
           sentences = [];
         }
-        await new Promise<void>(resolve => {
+        await new Promise(resolve => {
           const fileStream = fs
             .createReadStream(filePath)
             .pipe(eventStream.split())
@@ -149,10 +149,7 @@ export async function importSentences(pool: any) {
   const oldVersion = Number(
     (await useRedis) ? await redis.get('sentences-version') : 0
   );
-
   const version = ((oldVersion || 0) + 1) % 256; //== max size of version column
-  console.log("Version de redis");
-  console.log(version);
   const locales = (
     (await new Promise(resolve =>
       fs.readdir(SENTENCES_FOLDER, (_, names) => resolve(names))
