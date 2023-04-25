@@ -202,7 +202,6 @@ export async function importLocales() {
     FROM locales l
     LEFT JOIN sentences s ON s.locale_id = l.id
     LEFT JOIN (SELECT c.locale_id FROM clips c group by c.locale_id) t on t.locale_id = s.locale_id
-    WHERE l.name = 'es'
     GROUP BY l.id
     `);
 
