@@ -172,7 +172,7 @@ export async function importSentences(pool: any) {
             id NOT IN (SELECT sentence_id FROM skipped_sentences) AND
             id NOT IN (SELECT sentence_id FROM reported_sentences) AND
             id NOT IN (SELECT sentence_id FROM taxonomy_entries) AND
-            version <> ?
+            version
     `,
     [version]
   );
