@@ -187,9 +187,11 @@ export async function importLocales() {
   console.log('Importing languages...');
   const locales = await fetchPontoonLanguages();
   console.log('Got Pontoon Languages');
+  console.log(locales);
   const nativeNames = buildLocaleNativeNameMapping();
   console.log('Built native names');
   saveToMessages(locales);
+  console.log(nativeNames);
   console.log('Saved native names to message file');
 
   if (locales) {
