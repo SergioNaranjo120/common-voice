@@ -149,7 +149,10 @@ export async function importSentences(pool: any) {
   const oldVersion = Number(
     (await useRedis) ? await redis.get('sentences-version') : 0
   );
-  const version = ((oldVersion || 0) + 1) % 256; //== max size of version column
+  const version = (((oldVersion || 0) + 1) % 256); //== max size of version column
+
+  console.log("Version of sentences: ", version);
+  
   const locales = (
     (await new Promise(resolve =>
       fs.readdir(SENTENCES_FOLDER, (_, names) => resolve(names))
@@ -172,7 +175,7 @@ export async function importSentences(pool: any) {
             id NOT IN (SELECT sentence_id FROM skipped_sentences) AND
             id NOT IN (SELECT sentence_id FROM reported_sentences) AND
             id NOT IN (SELECT sentence_id FROM taxonomy_entries) AND
-            version
+            version <> ?
     `,
     [version]
   );
