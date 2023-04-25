@@ -42,10 +42,10 @@ export const actions = {
       getState: () => StateTree
     ) => {
       const { api } = getState();
-      const allLanguages = await api.fetchAllLanguages();
+      const allLanguages1 = await api.fetchAllLanguages();
 
       //Filtrar para mostrar solo espa;ol
-      const soloEsp = allLanguages.filter(language => language.name === 'es');
+      const allLanguages = allLanguages1.filter(language => language.name === 'es');
 
       //get obj of native names, default to language code
       const nativeNames = allLanguages.reduce((names: any, language) => {
