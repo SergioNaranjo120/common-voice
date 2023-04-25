@@ -44,11 +44,11 @@ export const actions = {
       const { api } = getState();
       const allLanguages1 = await api.fetchAllLanguages();
 
-      //Prueba para ver si el error extiende desde aqui;
-      console.log(allLanguages1);
-
       //Filtrar para mostrar solo espa;ol
       const allLanguages = allLanguages1.filter(language => language.name === 'es');
+
+      console.log("Idiomas a mostrarse al usuario");
+      console.log(allLanguages);
 
       //get obj of native names, default to language code
       const nativeNames = allLanguages.reduce((names: any, language) => {
