@@ -149,6 +149,8 @@ export async function importSentences(pool: any) {
   const oldVersion = Number(
     (await useRedis) ? await redis.get('sentences-version') : 0
   );
+  console.log("Version de redis");
+  console.log(oldVersion);
   const version = ((oldVersion || 0) + 1) % 256; //== max size of version column
   const locales = (
     (await new Promise(resolve =>
