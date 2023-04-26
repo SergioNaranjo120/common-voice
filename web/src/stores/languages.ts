@@ -47,9 +47,6 @@ export const actions = {
       //Filtrar para mostrar solo espa;ol
       const allLanguages = allLanguages1.filter(language => language.name === 'es');
 
-      console.log("Idiomas a mostrarse al usuario");
-      console.log(allLanguages);
-
       //get obj of native names, default to language code
       const nativeNames = allLanguages.reduce((names: any, language) => {
         names[language.name] = language.native_name ?? language.name;
