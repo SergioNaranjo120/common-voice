@@ -13,7 +13,7 @@ const MOCK_LANGUAGE_STATS = [
     id: 1,
     is_contributable: 1,
     sentencesCount: {
-      targetSentenceCount: 5000,
+      targetSentenceCount: 3000,
       currentCount: 1576279,
     },
     localizedPercentage: 0,

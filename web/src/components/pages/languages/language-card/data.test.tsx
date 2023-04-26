@@ -22,7 +22,7 @@ const HOURS = {
 const LANGUAGE_STATISTICS = [
   {
     is_contributable: true,
-    sentencesCount: { targetSentenceCount: 5000, currentCount: 1576279 },
+    sentencesCount: { targetSentenceCount: 3000, currentCount: 1576279 },
     localizedPercentage: 0,
     recordedHours: 100,
     validatedHours: 10,
@@ -31,7 +31,7 @@ const LANGUAGE_STATISTICS = [
   },
   {
     is_contributable: false,
-    sentencesCount: { targetSentenceCount: 5000, currentCount: 1258 },
+    sentencesCount: { targetSentenceCount: 3000, currentCount: 1258 },
     localizedPercentage: 55,
     recordedHours: 0,
     validatedHours: 0,

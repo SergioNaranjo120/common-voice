@@ -257,7 +257,7 @@ export const up = async function (db: any): Promise<any> {
   }
 
   await db.runSql(`
-    ALTER TABLE locales ADD COLUMN target_sentence_count SMALLINT NOT NULL DEFAULT 5000;
+    ALTER TABLE locales ADD COLUMN target_sentence_count SMALLINT NOT NULL DEFAULT 3000;
   `);
 
   for (const row of locales) {
