@@ -63,8 +63,9 @@
   "dependencies": {
     "@react-hook/window-size": "^3.1.1",
     "@testing-library/dom": "7.21.4",
+    "cpu-features": "^0.0.7",
     "hooks": "^0.3.2",
-    "react": "16",
+    "react": "^16.14.0",
     "react-balance-text": "^2.0.1",
     "react-dom": "16",
     "react-error-boundary": "^4.0.3",
