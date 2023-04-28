@@ -27,6 +27,7 @@ const SOURCES = {
     'blob:',
     'https://*.amazonaws.com',
     'https://*.amazon.com',
+    'http://hablaec-o2i.epn.edu.ec:8080',
   ],
   'script-src': [
     "'self'",
