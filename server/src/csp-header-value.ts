@@ -28,6 +28,7 @@ const SOURCES = {
     'https://*.amazonaws.com',
     'https://*.amazon.com',
     'https://hablaec-o2i.epn.edu.ec:8080',
+    'http://hablaec-o2i.epn.edu.ec:8080',
   ],
   'script-src': [
     "'self'",
