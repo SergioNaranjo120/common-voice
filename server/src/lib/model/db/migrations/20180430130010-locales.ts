@@ -7,7 +7,6 @@ export const up = async function (db: any): Promise<any> {
       );
       
       INSERT INTO locales (id, name) VALUES (1, 'en');
-      INSERT INTO locales (id, name) VALUES (2, 'es');
       
       ALTER TABLE sentences ADD COLUMN locale_id SMALLINT NOT NULL DEFAULT 1;
       
