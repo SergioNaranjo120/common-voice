@@ -247,7 +247,7 @@ export async function importLocales() {
           allLanguages[language.code]?.target_sentence_count ||
           DEFAULT_TARGET_SENTENCE_COUNT,
         is_translated: isTranslated ? 1 : 0,
-        is_contributable
+        is_contributable,
       };
       return obj;
     }, {});
