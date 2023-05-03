@@ -182,7 +182,7 @@ export async function importSentences(pool: any) {
   AND skipped_sentences.sentence_id IS NULL
   AND reported_sentences.sentence_id IS NULL
   AND taxonomy_entries.sentence_id IS NULL
-  AND version <> 1;
+  AND version <> ?;
     `,
     [version]
   );
