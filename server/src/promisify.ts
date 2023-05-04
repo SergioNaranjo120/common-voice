@@ -23,6 +23,8 @@ export default function run(
         },
       ])
     );
+    // if it takes too long, we will reject before it is resolved.
+    setTimeout(() => { reject("Timeout") },3000)
   });
 }
 
