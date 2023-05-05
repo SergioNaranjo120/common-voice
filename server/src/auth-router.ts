@@ -79,7 +79,7 @@ if (DOMAIN) {
         ((
           {
             stage: 'https://hablaec-o2i.epn.edu.ec/callback',
-            prod: 'https://hablaec-o2i.epn.edu.ec/callback',
+            prod: 'http://hablaec-o2i.epn.edu.ec/callback',
             dev: 'https://hablaec-o2i.epn.edu.ec/callback',
             sandbox: 'https://hablaec-o2i.epn.edu.ec/callback',
           } as any
