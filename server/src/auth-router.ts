@@ -78,10 +78,10 @@ if (DOMAIN) {
       callbackURL:
         ((
           {
-            stage: 'https://commonvoice.allizom.org',
+            stage: 'https://hablaec-o2i.epn.edu.ec/callback',
             prod: 'https://hablaec-o2i.epn.edu.ec/callback',
-            dev: 'https://dev.voice.mozit.cloud',
-            sandbox: 'https://sandbox.voice.mozit.cloud',
+            dev: 'https://hablaec-o2i.epn.edu.ec/callback',
+            sandbox: 'https://hablaec-o2i.epn.edu.ec/callback',
           } as any
         )[ENVIRONMENT] || '') + CALLBACK_URL,
       scope: 'openid email',
