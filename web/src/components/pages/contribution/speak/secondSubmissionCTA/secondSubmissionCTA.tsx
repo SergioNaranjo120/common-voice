@@ -23,6 +23,8 @@ export const SecondPostSubmissionCTA: React.FC<
     y: height / 4,
   };
 
+  const heightWithoutHeader = height - 75;
+
   return (
     <div data-testid="second-submission-cta">
       <Confetti
