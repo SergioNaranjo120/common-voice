@@ -27,7 +27,7 @@ export const SecondPostSubmissionCTA: React.FC<
     <div data-testid="second-submission-cta">
       <Confetti
         width={width}
-        height={height}
+        height={heightWithoutHeader}
         numberOfPieces={200}
         gravity={0.1}
         recycle={false}
