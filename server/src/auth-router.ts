@@ -78,10 +78,10 @@ if (DOMAIN) {
       callbackURL:
         ((
           {
-            stage: 'https://hablaec-o2i.epn.edu.ec/callback',
-            prod: 'http://hablaec-o2i.epn.edu.ec/callback',
-            dev: 'https://hablaec-o2i.epn.edu.ec/callback',
-            sandbox: 'https://hablaec-o2i.epn.edu.ec/callback',
+            stage: 'https://hablaec-o2i.epn.edu.ec/',
+            prod: 'http://hablaec-o2i.epn.edu.ec/',
+            dev: 'https://hablaec-o2i.epn.edu.ec/',
+            sandbox: 'https://hablaec-o2i.epn.edu.ec/',
           } as any
         )[ENVIRONMENT] || '') + CALLBACK_URL,
       scope: 'openid email',
