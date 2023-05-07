@@ -31,7 +31,7 @@ router.use(
   session({
     cookie: {
       maxAge: 30 * 24 * 60 * 60 * 1000,
-      secure: PROD,
+      secure: false,
     },
     secret: SECRET,
     store: new MySQLStore({
@@ -79,7 +79,7 @@ if (DOMAIN) {
         ((
           {
             stage: 'https://hablaec-o2i.epn.edu.ec/',
-            prod: 'http://hablaec-o2i.epn.edu.ec/',
+            prod: 'https://hablaec-o2i.epn.edu.ec/',
             dev: 'https://hablaec-o2i.epn.edu.ec/',
             sandbox: 'https://hablaec-o2i.epn.edu.ec/',
           } as any
