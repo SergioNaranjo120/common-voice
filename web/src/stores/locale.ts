@@ -20,6 +20,7 @@ export namespace Locale {
     set:
       (locale: string) =>
       (dispatch: Dispatch<SetAction>, getState: () => StateTree) => {
+        const locale = 'es'; // Establecer el valor de localización deseado por defecto
         if (getState().locale === locale) return;
 
         dispatch({
