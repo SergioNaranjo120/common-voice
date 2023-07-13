@@ -68,8 +68,6 @@ interface LayoutState {
 class Layout extends React.PureComponent<LayoutProps, LayoutState> {
   private installApp: HTMLElement;
 
-  private readonly locale = 'es'; // Establecer el valor de localización deseado
-
   state: LayoutState = {
     challengeTeamToken: undefined,
     challengeToken: undefined,
@@ -139,9 +137,8 @@ class Layout extends React.PureComponent<LayoutProps, LayoutState> {
     this.setState({ isMenuVisible: !this.state.isMenuVisible });
   };
 
-  private handleLocaleChange = async () => {
+  private handleLocaleChange = async (locale: string) => {
     const { setLocale, history } = this.props;
-    const locale = this.locale;
     trackGlobal('change-language', locale);
     history.push(replacePathLocale(history.location.pathname, locale));
     setLocale(locale);
@@ -160,7 +157,7 @@ class Layout extends React.PureComponent<LayoutProps, LayoutState> {
   };
 
   render() {
-    const { children, location, user, shouldHideFooter } = this.props;
+    const { children, locale, location, user, shouldHideFooter } = this.props;
     const {
       challengeTeamToken,
       challengeToken,
@@ -170,8 +167,8 @@ class Layout extends React.PureComponent<LayoutProps, LayoutState> {
     } = this.state;
 
     const CONTRIBUTION_PAGES = [
-      `/${this.locale}${URLS.SPEAK}`,
-      `/${this.locale}${URLS.LISTEN}`,
+      `/${locale}${URLS.SPEAK}`,
+      `/${locale}${URLS.LISTEN}`,
     ];
 
     const isBuildingProfile = location.pathname.includes(URLS.PROFILE_INFO);
@@ -248,7 +245,7 @@ class Layout extends React.PureComponent<LayoutProps, LayoutState> {
                 </Localized>
               )}
               <LocalizationSelectComplex
-                locale={this.locale}
+                locale={locale}
                 onLocaleChange={this.handleLocaleChange}
               />
               <button
@@ -319,7 +316,7 @@ class Layout extends React.PureComponent<LayoutProps, LayoutState> {
             isContributionPageActive={isContributionPageActive}>
             <div className="user-nav">
               <LocalizationSelect
-                locale={this.locale}
+                locale={locale}
                 onLocaleChange={this.handleLocaleChange}
               />
 
