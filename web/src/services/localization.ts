@@ -38,11 +38,10 @@ export function* asBundleGenerator(
 
 export function createCrossLocalization(
   localeMessages: string[][],
-  locales: string[],
   availableLocales: string[]
 ) {
   const currentLocales = negotiateLocales(
-    [...locales, ...navigator.languages],
+    [DEFAULT_LOCALE], //Usar es por defecto
     availableLocales
   );
 
@@ -57,11 +56,10 @@ export function createCrossLocalization(
 
 export async function createLocalization(
   api: API,
-  userLocales: string[],
   messageOverwrites: MessageOverwrites,
   availableLocales: string[]
 ) {
-  const currentLocales = negotiateLocales(userLocales, availableLocales);
+  const currentLocales = negotiateLocales([DEFAULT_LOCALE], availableLocales);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const localeMessages: any = await Promise.all(
