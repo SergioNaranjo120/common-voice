@@ -30,7 +30,6 @@ const LanguageCard = ({
 
   const l10n = createCrossLocalization(
     localeMessages,
-    [language.locale, globalLocale],
     availableLocales
   );
 
