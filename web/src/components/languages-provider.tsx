@@ -143,6 +143,7 @@ const LanguagesProvider = ({ children }: LanguagesProviderProps) => {
 
     const newLocalization = await createLocalization(
       api,
+      localizationUserLocales,
       flags.messageOverwrites,
       languages.translatedLocales
     );
