@@ -53,9 +53,6 @@ export const actions = {
         return names;
       }, {});
 
-      //Hacer que el nombre nativo de en sea es para que redirija a espa;ol
-      nativeNames['en'] = 'es';
-
       const contributableNativeNames = allLanguages.reduce(
         (names: Record<string, string>, language) => {
           if (language.is_contributable) {
