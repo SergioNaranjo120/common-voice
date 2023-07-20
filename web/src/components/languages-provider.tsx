@@ -33,7 +33,7 @@ const LanguageRoutes = ({
 }: LanguageRoutesProps) => {
   const languages = useTypedSelector(({ languages }) => languages);
 
-  const [primaryUserLocale] = userLocales;
+  const [primaryUserLocale] = DEFAULT_LOCALE;
 
   return (
     <Switch>

@@ -45,7 +45,7 @@ export const actions = {
       const allLanguages1 = await api.fetchAllLanguages();
 
       //Filtrar para mostrar solo espa;ol
-      const allLanguages = allLanguages1.filter(language => language.name === 'es' || language.name === 'en');
+      const allLanguages = allLanguages1.filter(language => language.name === 'es');
 
       //get obj of native names, default to language code
       const nativeNames = allLanguages.reduce((names: any, language) => {
