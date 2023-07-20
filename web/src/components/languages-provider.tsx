@@ -34,6 +34,8 @@ const LanguageRoutes = ({
   const languages = useTypedSelector(({ languages }) => languages);
 
   const [primaryUserLocale] = userLocales;
+  console.log("Aqui!!!!!!!");
+  console.log(userLocales);
 
   return (
     <Switch>
