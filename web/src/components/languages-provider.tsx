@@ -111,6 +111,9 @@ const LanguagesProvider = ({ children }: LanguagesProviderProps) => {
   const [userLocales, setUserLocales] = useState([]);
   const [localization, setLocalization] = useState(null);
 
+  console.log("UserLocals: ", userLocales);
+  console.log("Localization: ", localization);
+
   const loadLanguages = () => {
     dispatch(Languages.actions.loadLocalesData());
   };
