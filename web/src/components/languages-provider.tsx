@@ -78,7 +78,7 @@ const LanguageRoutes = ({
             return (
               <Redirect
                 push
-                to={location.pathname.replace(localeParam, 'en')}
+                to={location.pathname.replace(localeParam, 'es')}
               />
             );
           }
