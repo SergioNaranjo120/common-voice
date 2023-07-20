@@ -74,7 +74,7 @@ const LanguageRoutes = ({
           }
 
           // redirect en-UK, en-US etc to en
-          if (localeParam.startsWith('en')) {
+          if (localeParam.startsWith('en-')) {
             return (
               <Redirect
                 push
