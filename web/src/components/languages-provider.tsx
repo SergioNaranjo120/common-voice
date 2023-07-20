@@ -107,6 +107,8 @@ const LanguagesProvider = ({ children }: LanguagesProviderProps) => {
   const api = useAPI();
   const history = useHistory();
   const languages = useTypedSelector(({ languages }) => languages);
+  console.log("Aqui!!!!")
+  console.log(languages);
   const flags = useTypedSelector(({ flags }) => flags);
   const dispatch = useDispatch();
 
