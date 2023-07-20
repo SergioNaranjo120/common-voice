@@ -34,8 +34,6 @@ const LanguageRoutes = ({
   const languages = useTypedSelector(({ languages }) => languages);
 
   const [primaryUserLocale] = [DEFAULT_LOCALE];
-  console.log("Aqui!!!!!!!");
-  console.log(userLocales);
 
   return (
     <Switch>
@@ -107,8 +105,6 @@ const LanguagesProvider = ({ children }: LanguagesProviderProps) => {
   const api = useAPI();
   const history = useHistory();
   const languages = useTypedSelector(({ languages }) => languages);
-  console.log("Aqui!!!!")
-  console.log(languages);
   const flags = useTypedSelector(({ flags }) => flags);
   const dispatch = useDispatch();
 
