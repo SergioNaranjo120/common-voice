@@ -33,7 +33,7 @@ const LanguageRoutes = ({
 }: LanguageRoutesProps) => {
   const languages = useTypedSelector(({ languages }) => languages);
 
-  const [primaryUserLocale] = userLocales;
+  const [primaryUserLocale] = 'es';
   console.log("Aqui!!!!!!!");
   console.log(userLocales);
 
