@@ -128,6 +128,9 @@ export namespace Clips {
           return;
         }
 
+        console.log("Estado: ", state.locale);
+        console.log("Estado: ", state.languages);
+
         if (localeClips(state).clips.length >= MIN_CACHE_SIZE) {
           return;
         }
