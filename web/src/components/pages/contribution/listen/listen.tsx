@@ -54,7 +54,7 @@ interface PropsFromState {
   clips: ClipType[];
   isLoading: boolean;
   hasLoadingError: boolean;
-  locale: 'es';
+  locale: Locale.State;
   showFirstContributionToast: boolean;
   hasEarnedSessionToast: boolean;
   showFirstStreakToast: boolean;
