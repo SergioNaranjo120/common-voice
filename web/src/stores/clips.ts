@@ -121,12 +121,12 @@ export namespace Clips {
         const state = getState();
 
         // don't load if no contributable locale
-        /*if (
+        if (
           state.languages &&
           !state.languages.contributableLocales.includes(state.locale)
         ) {
           return;
-        }*/
+        }
 
         if (localeClips(state).clips.length >= MIN_CACHE_SIZE) {
           return;

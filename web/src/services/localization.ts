@@ -14,7 +14,7 @@ export function negotiateLocales(
   availableLocales: ReadonlyArray<string>
 ) {
   return negotiateLanguages(locales, availableLocales, {
-    defaultLocale: DEFAULT_LOCALE,
+    defaultLocale: [DEFAULT_LOCALE, 'en'],
   });
 }
 
