@@ -70,8 +70,8 @@ export default class API {
     const { user } = this;
     if (path.startsWith(location.origin) && !user.account && user.userId) {
       finalHeaders['Authorization'] =
-        'Basic ' + btoa(user.userId + ':' + user.authToken),
-        'Acept-Language': 'en, es;q=0.5';
+        'Basic ' + btoa(user.userId + ':' + user.authToken) +
+        'Acept-Language'+ ':' + 'en, es;q=0.5';
     }
 
     const response = await fetch(path, {
