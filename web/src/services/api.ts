@@ -33,6 +33,9 @@ interface Vote extends Event {
 
 const API_PATH = location.origin + '/api/v1';
 
+console.log("!!Aqui!!");
+console.log(API_PATH);
+
 const getChallenge = (user: User.State): string => {
   return user?.account?.enrollment?.challenge
     ? user.account.enrollment.challenge
@@ -135,7 +138,6 @@ export default class API {
         challenge: getChallenge(this.user),
         from_demo: fromDemo ? 'true' : 'false',
         source: 'web',
-        'Acept-Language': 'en, es;q=0.5'
       },
       body: blob,
     });
