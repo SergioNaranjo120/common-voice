@@ -199,7 +199,7 @@ export namespace Clips {
   };
 
   export function reducer(
-    locale: 'es',
+    locale: string,
     state: State = {},
     action: Action
   ): State {
@@ -208,6 +208,9 @@ export namespace Clips {
       ...DEFAULT_LOCALE_STATE,
       ...currentLocaleState,
     };
+
+    console.log("!!!Aqui!!!");
+    console.log(state[locale]);
 
     switch (action.type) {
       case ActionType.LOAD:
