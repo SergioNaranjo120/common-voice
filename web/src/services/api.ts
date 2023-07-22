@@ -70,7 +70,8 @@ export default class API {
     const { user } = this;
     if (path.startsWith(location.origin) && !user.account && user.userId) {
       finalHeaders['Authorization'] =
-        'Basic ' + btoa(user.userId + ':' + user.authToken);
+        'Basic ' + btoa(user.userId + ':' + user.authToken),
+        'Acept-Language': 'en, es;q=0.5';
     }
 
     const response = await fetch(path, {
@@ -102,8 +103,6 @@ export default class API {
   }
 
   getLocalePath() {
-    console.log("!!Aqui!!");
-    console.log(this.locale ? API_PATH + '/' + this.locale : API_PATH);
     return this.locale ? API_PATH + '/' + this.locale : API_PATH;
   }
 
