@@ -135,6 +135,7 @@ export default class API {
         challenge: getChallenge(this.user),
         from_demo: fromDemo ? 'true' : 'false',
         source: 'web',
+        'Acept-Language': 'en, es;q=0.5'
       },
       body: blob,
     });
