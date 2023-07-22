@@ -33,9 +33,6 @@ interface Vote extends Event {
 
 const API_PATH = location.origin + '/api/v1';
 
-console.log("!!Aqui!!");
-console.log(API_PATH);
-
 const getChallenge = (user: User.State): string => {
   return user?.account?.enrollment?.challenge
     ? user.account.enrollment.challenge
@@ -64,6 +61,7 @@ export default class API {
       isJSON
         ? {
             'Content-Type': 'application/json; charset=utf-8',
+            'Acept-Language': 'en, es;q=0.5',
           }
         : {},
       headers
