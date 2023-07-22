@@ -199,7 +199,7 @@ export namespace Clips {
   };
 
   export function reducer(
-    locale: string,
+    locale: 'es',
     state: State = {},
     action: Action
   ): State {
