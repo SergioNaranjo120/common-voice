@@ -102,6 +102,8 @@ export default class API {
   }
 
   getLocalePath() {
+    console.log("!!Aqui!!");
+    console.log(this.locale ? API_PATH + '/' + this.locale : API_PATH);
     return this.locale ? API_PATH + '/' + this.locale : API_PATH;
   }
 
