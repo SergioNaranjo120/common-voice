@@ -13,7 +13,7 @@ export function negotiateLocales(
   locales: ReadonlyArray<string>,
   availableLocales: ReadonlyArray<string>
 ) {
-  return negotiateLanguages(locales, availableLocales, {
+  return negotiateLanguages(locales, ['es', 'en'], {
     defaultLocale: DEFAULT_LOCALE,
   });
 }
@@ -61,7 +61,7 @@ export async function createLocalization(
   messageOverwrites: MessageOverwrites,
   availableLocales: string[]
 ) {
-  const currentLocales = [negotiateLocales(userLocales, availableLocales),'en'];
+  const currentLocales = negotiateLocales(userLocales, availableLocales);
   console.log("!!!Aqui!!");
   console.log(currentLocales);
 
