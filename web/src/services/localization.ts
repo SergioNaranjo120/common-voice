@@ -13,7 +13,7 @@ export function negotiateLocales(
   locales: ReadonlyArray<string>,
   availableLocales: ReadonlyArray<string>
 ) {
-  return negotiateLanguages(locales, ['es', 'en'], {
+  return negotiateLanguages(['es', 'en'], ['es', 'en'], {
     defaultLocale: DEFAULT_LOCALE,
   });
 }
