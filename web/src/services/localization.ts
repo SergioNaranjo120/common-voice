@@ -46,9 +46,6 @@ export function createCrossLocalization(
     availableLocales
   );
 
-  console.log("!!!Aqui!!");
-  console.log(currentLocales);
-
   localeMessages = localeMessages
     .filter(([locale]) => currentLocales.includes(locale))
     .sort(([locale1], [locale2]) =>
