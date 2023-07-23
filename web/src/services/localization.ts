@@ -46,9 +46,6 @@ export function createCrossLocalization(
     availableLocales
   );
 
-  console.log("!!!Aqui!!");
-  console.log(availableLocales);
-
   localeMessages = localeMessages
     .filter(([locale]) => currentLocales.includes(locale))
     .sort(([locale1], [locale2]) =>
@@ -65,6 +62,8 @@ export async function createLocalization(
   availableLocales: string[]
 ) {
   const currentLocales = negotiateLocales(userLocales, availableLocales);
+  console.log("!!!Aqui!!");
+  console.log(currentLocales);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const localeMessages: any = await Promise.all(
