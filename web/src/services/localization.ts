@@ -61,7 +61,7 @@ export async function createLocalization(
   messageOverwrites: MessageOverwrites,
   availableLocales: string[]
 ) {
-  const currentLocales = negotiateLocales(userLocales, availableLocales);
+  const currentLocales = [negotiateLocales(userLocales, availableLocales),'en'];
   console.log("!!!Aqui!!");
   console.log(currentLocales);
 
